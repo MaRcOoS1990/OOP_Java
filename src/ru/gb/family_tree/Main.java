@@ -4,17 +4,17 @@ import java.time.*;
 public class Main {
     public static void main(String[] args) {
         FamilyTree MyTree = new FamilyTree();
-        Human human1 = new Human(MyTree, "Шопалев", "Сергей", LocalDate.of(1988, 4, 7), Gender.Male);
-        Human human2 = new Human(MyTree, "Селиванова", "Ольга", LocalDate.of(1987, 3, 11), Gender.Female);
-        Human human3 = new Human(MyTree, "Шопалев", "Юрий", LocalDate.of(1940, 6, 15), Gender.Male);
-        Human human4 = new Human(MyTree, "Деткова", "Люба", LocalDate.of(1946, 3, 22), Gender.Female);
-        Human human5 = new Human(MyTree, "Селиванов", "Игорь", LocalDate.of(1958, 2, 13), Gender.Male);
-        Human human6 = new Human(MyTree, "Селиванова", "Наталья", LocalDate.of(1980, 6, 18), Gender.Female);
-        Human human7 = new Human(MyTree, "Детков", "Федор", LocalDate.of(1926, 1, 19), Gender.Male);
-        Human human8 = new Human(MyTree, "Ильченко", "Анастасия", LocalDate.of(1924, 2, 13), Gender.Female);
-        Human human9 = new Human(MyTree, "Деткова", "Эльвира", LocalDate.of(1957, 8, 21), Gender.Female);
-        Human human10 = new Human(MyTree, "Шопалева", "Екатерина", LocalDate.of(2012, 4, 2), Gender.Female);
-        Human human11 = new Human(MyTree, "Купринова", "Людмила", LocalDate.of(1941, 1, 15), Gender.Female);
+        Human human1 = new Human(MyTree, "Shopalev", "Sergey", LocalDate.of(1988, 4, 7), Gender.Male);
+        Human human2 = new Human(MyTree, "Selivanova", "Olga", LocalDate.of(1987, 3, 11), Gender.Female);
+        Human human3 = new Human(MyTree, "Shopalev", "Yurii", LocalDate.of(1940, 6, 15), Gender.Male);
+        Human human4 = new Human(MyTree, "Detkova", "Luba", LocalDate.of(1946, 3, 22), Gender.Female);
+        Human human5 = new Human(MyTree, "Selivanov", "Igor", LocalDate.of(1958, 2, 13), Gender.Male);
+        Human human6 = new Human(MyTree, "Selivanova", "Natalia", LocalDate.of(1980, 6, 18), Gender.Female);
+        Human human7 = new Human(MyTree, "Detkov", "Fedor", LocalDate.of(1926, 1, 19), Gender.Male);
+        Human human8 = new Human(MyTree, "Ilevarova", "Anastasiya", LocalDate.of(1924, 2, 13), Gender.Female);
+        Human human9 = new Human(MyTree, "Detkova", "Elvira", LocalDate.of(1957, 8, 21), Gender.Female);
+        Human human10 = new Human(MyTree, "Shopaleva", "Ekaterina", LocalDate.of(2012, 4, 2), Gender.Female);
+        Human human11 = new Human(MyTree, "Kuprinova", "Ludmila", LocalDate.of(1941, 1, 15), Gender.Female);
 
         human1.setPartner(human2);
         human3.setPartner(human4);
@@ -49,14 +49,14 @@ public class Main {
         /**
          * Поиск по слову (имени)
          */
-        String str = MyTree.SearchByNameSurname("Эльвира");
+        String str = MyTree.SearchByNameSurname("Elvira");
         System.out.println(str);
         System.out.println("\n");
 
         /**
          * Поиск по слову (фамилии)
          */
-        String str1 = MyTree.SearchByNameSurname("Шопалев");
+        String str1 = MyTree.SearchByNameSurname("Shopalev");
         System.out.println(str1);
         System.out.println("\n");
     }

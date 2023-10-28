@@ -1,22 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02c3710a-3b86-4809-b5ed-7b03e6ac5931" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/OOP_Java.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/FamilyTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/gb/vending_machin/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/gb/vending_machin/product/Bottle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/gb/vending_machin/product/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ru/gb/vending_machin/vending/VendingMachine.java" afterDir="false" />
+    <list default="true" id="02c3710a-3b86-4809-b5ed-7b03e6ac5931" name="Changes" comment="final build">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/gb/family_tree/FamilyTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/FamilyTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/gb/family_tree/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/gb/family_tree/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,8 +81,16 @@
       <workItem from="1698082253246" duration="3000" />
       <workItem from="1698142588016" duration="10000" />
       <workItem from="1698142693155" duration="22000" />
-      <workItem from="1698473262409" duration="988000" />
+      <workItem from="1698473262409" duration="1719000" />
     </task>
+    <task id="LOCAL-00001" summary="final build">
+      <created>1698474299480</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1698474299480</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,5 +106,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="final build" />
+    <option name="LAST_COMMIT_MESSAGE" value="final build" />
   </component>
 </project>

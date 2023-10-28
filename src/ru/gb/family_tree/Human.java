@@ -79,9 +79,9 @@ public class Human {
      * Получение списка родителей
      */
     public String getParents() {
-        StringBuilder sb = new StringBuilder("Родители: ");
+        StringBuilder sb = new StringBuilder("Parents: ");
         if (this.parents.isEmpty()){
-            sb.append("Данных нет");
+            sb.append("no data available");
         }
         else{
             sb.append(this.parents);
@@ -94,9 +94,9 @@ public class Human {
      */
     public String getChildren() {
         if(this.children.isEmpty()){
-            return "Детей нет";
+            return "no children";
         }
-        return "Дети: " + this.children;
+        return "Children: " + this.children;
     }
 
     /**
@@ -104,9 +104,9 @@ public class Human {
      */
     public String getPartner() {
         if(this.partner == null){
-            return "Не женат/замужем";
+            return "Not married";
         }
-        return "Супруг: " + this.partner;
+        return "Spouse: " + this.partner;
     }
 
     /**
@@ -143,9 +143,9 @@ public class Human {
      */
     private void setParent(Human human) {
         if (human.getGender() == Gender.Male) {
-            this.parents.put("Отец " , " " + human.getFullName());
+            this.parents.put("Father " , " " + human.getFullName());
         }
-        else this.parents.put("Мать " , " " + human.getFullName());
+        else this.parents.put("Mother " , " " + human.getFullName());
     }
 
     /**
