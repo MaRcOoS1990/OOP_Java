@@ -1,5 +1,9 @@
 package ru.gb.family_tree;
 
+import ru.gb.family_tree.family_tree.FamilyTree;
+import ru.gb.family_tree.family_tree.Human;
+import ru.gb.family_tree.gender.Gender;
+
 import java.time.*;
 public class Main {
     public static void main(String[] args) {

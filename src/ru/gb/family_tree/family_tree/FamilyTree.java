@@ -1,9 +1,9 @@
-package ru.gb.family_tree;
+package ru.gb.family_tree.family_tree;
 
 import java.util.*;
 
 public class FamilyTree {
-    private final List< Human > FamilyList;
+    private final List<Human> FamilyList;
     private int id = 1;
     public FamilyTree() {
         FamilyList = new ArrayList<>();

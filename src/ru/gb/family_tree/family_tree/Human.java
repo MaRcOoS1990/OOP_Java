@@ -1,4 +1,6 @@
-package ru.gb.family_tree;
+package ru.gb.family_tree.family_tree;
+import ru.gb.family_tree.gender.Gender;
+
 import java.time.*;
 import java.util.*;
 
