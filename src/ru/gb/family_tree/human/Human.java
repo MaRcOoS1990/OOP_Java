@@ -1,10 +1,11 @@
 package ru.gb.family_tree.human;
 import ru.gb.family_tree.family_tree.FamilyTree;
 
+import java.io.Serializable;
 import java.time.*;
 import java.util.*;
 
-public class Human {
+public class Human implements Serializable {
     private int id;
     private String lastname;
     private String name;
