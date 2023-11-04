@@ -1,12 +1,14 @@
 package ru.gb.family_tree;
 
 import ru.gb.family_tree.family_tree.FamilyTree;
-import ru.gb.family_tree.family_tree.Human;
-import ru.gb.family_tree.gender.Gender;
+import ru.gb.family_tree.human.Human;
+import ru.gb.family_tree.human.Gender;
+import ru.gb.family_tree.writer.FileHandler;
 
 import java.time.*;
 public class Main {
     public static void main(String[] args) {
+
         FamilyTree MyTree = new FamilyTree();
         Human human1 = new Human(MyTree, "Shopalev", "Sergey", LocalDate.of(1988, 4, 7), Gender.Male);
         Human human2 = new Human(MyTree, "Selivanova", "Olga", LocalDate.of(1987, 3, 11), Gender.Female);
@@ -43,25 +45,41 @@ public class Main {
         human8.setDayOfDeath(LocalDate.of(2010, 10, 10));
 
         /**
-         * Вывод всех членов семьи
+         * Р’С‹РІРѕРґ РІСЃРµС… С‡Р»РµРЅРѕРІ СЃРµРјСЊРё
          */
-        System.out.println("-*-*".repeat(30));
-        System.out.println(MyTree.AllTree());
-
-        System.out.println("-*-*".repeat(30));
+        System.out.println("- - ".repeat(30));
+        System.out.println(MyTree.allTree());
+        System.out.println("- - ".repeat(30));
 
         /**
-         * Поиск по слову (имени)
+         * РџРѕРёСЃРє РїРѕ СЃР»РѕРІСѓ (РёРјРµРЅРё)
          */
-        String str = MyTree.SearchByNameSurname("Elvira");
+        String str = MyTree.searchByNameSurname("Elvira");
+        System.out.println("Search By name");
         System.out.println(str);
         System.out.println("\n");
 
         /**
-         * Поиск по слову (фамилии)
+         * РџРѕРёСЃРє РїРѕ СЃР»РѕРІСѓ (С„Р°РјРёР»РёРё)
          */
-        String str1 = MyTree.SearchByNameSurname("Shopalev");
-        System.out.println(str1);
-        System.out.println("\n");
+       String str1 = MyTree.searchByNameSurname("Shopalev");
+        System.out.println("Search By Surename");
+       System.out.println(str1);
+       System.out.println("\n");
+
+
+    }
+
+        private static void save(FamilyTree tree){
+            FileHandler fileHandler = new FileHandler();
+            String filePath = "src/ru/gb/family_tree/writer/tree.txt";
+            fileHandler.save(tree, filePath);
+    }
+
+    private static FamilyTree load(){
+        String filePath = "src/ru/gb/family_tree/writer/tree.txt";
+        FileHandler fileHandler = new FileHandler();
+        return (FamilyTree) fileHandler.read(filePath);
+
     }
 }

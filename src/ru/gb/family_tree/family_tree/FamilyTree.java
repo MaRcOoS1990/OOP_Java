@@ -1,26 +1,25 @@
 package ru.gb.family_tree.family_tree;
 
+import ru.gb.family_tree.human.Human;
+
+import java.io.Serializable;
 import java.util.*;
 
-public class FamilyTree {
-    private final List<Human> FamilyList;
+public class FamilyTree implements Serializable {
+    private  List<Human> FamilyList;
     private int id = 1;
     public FamilyTree() {
         FamilyList = new ArrayList<>();
     }
 
-    /**
-     * Добавление человека в FamilyList с проверкой
-     */
+
     public void addHuman(Human human) {
         human.setId(id++);
         if (!FamilyList.contains(human)) FamilyList.add(human);
     }
 
-    /**
-     * Вывод в строках всех членов семьи с их датами, родителями, детьми, возрастом, полом и ID, полученная при переборе элементов в FamilyList
-     */
-    public String AllTree() {
+
+    public String allTree() {
         StringBuilder sb = new StringBuilder();
         sb.append("All family members :\n").append("- - ".repeat(30)).append("\n");
         for (Human member: FamilyList) {
@@ -31,11 +30,13 @@ public class FamilyTree {
 
             if(member.getDayOfDeath()!=null) {
                 sb.append("Day of Death : ");
+                sb.append(member.getDayOfDeath());
+                sb.append(" , ");
                 sb.append(member.getAge());
-                sb.append("; ");
+                sb.append(" years; ");
             }
             else {
-                sb.append("Aga: ");
+                sb.append("Age: ");
                 sb.append(member.getAge());
                 sb.append(" years; ");
             }
@@ -50,10 +51,8 @@ public class FamilyTree {
         return sb.toString();
     }
 
-    /**
-     * Поиск и вывод в строку Данных о человеке по запросу "name", которое может содержаться в имени или фамилии
-     */
-    public String SearchByNameSurname (String name){
+
+    public String searchByNameSurname(String name){
         StringBuilder sb = new StringBuilder();
         sb.append("Search results: \n");
         for (Human member: FamilyList) {

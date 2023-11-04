@@ -2,7 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="02c3710a-3b86-4809-b5ed-7b03e6ac5931" name="Changes" comment="changes">
+      <change afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/writer/FileHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/writer/Writable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/gb/family_tree/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/gb/family_tree/family_tree/FamilyTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/family_tree/FamilyTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/gb/family_tree/family_tree/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/human/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ru/gb/family_tree/gender/Gender.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/human/Gender.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +28,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2XAOhG0o37E6WR1ycocie2GyPrR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -34,16 +43,19 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
 }</component>
   <component name="RunManager" selected="Application.ru.gb.family_tree.Main">
     <configuration name="ru.gb.family_tree.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-21" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="ru.gb.family_tree.Main" />
       <module name="OOP_Java" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ru.gb.family_tree.family_tree.*" />
+          <option name="PATTERN" value="ru.gb.family_tree.family_tree.FamilyTree" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -79,6 +91,19 @@
       <workItem from="1698142693155" duration="22000" />
       <workItem from="1698473262409" duration="2039000" />
       <workItem from="1698654097763" duration="30000" />
+      <workItem from="1698654197295" duration="439000" />
+      <workItem from="1698654684555" duration="800000" />
+      <workItem from="1698662459471" duration="119000" />
+      <workItem from="1698682111049" duration="9000" />
+      <workItem from="1698685401443" duration="708000" />
+      <workItem from="1698738735252" duration="336000" />
+      <workItem from="1698739151648" duration="2605000" />
+      <workItem from="1698741788649" duration="722000" />
+      <workItem from="1698749751494" duration="347000" />
+      <workItem from="1698762142105" duration="1001000" />
+      <workItem from="1698764295697" duration="9000" />
+      <workItem from="1698999349526" duration="1263000" />
+      <workItem from="1699086982538" duration="2462000" />
     </task>
     <task id="LOCAL-00001" summary="final build">
       <created>1698474299480</created>
@@ -94,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1698475182120</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="changes">
+      <created>1698654406843</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1698654406843</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -115,5 +147,9 @@
     <MESSAGE value="final build" />
     <MESSAGE value="changes" />
     <option name="LAST_COMMIT_MESSAGE" value="changes" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

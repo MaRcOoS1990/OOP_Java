@@ -1,18 +1,18 @@
-package ru.gb.family_tree.family_tree;
-import ru.gb.family_tree.gender.Gender;
+package ru.gb.family_tree.human;
+import ru.gb.family_tree.family_tree.FamilyTree;
 
 import java.time.*;
 import java.util.*;
 
 public class Human {
     private int id;
-    private final String lastname;
-    private final String name;
+    private String lastname;
+    private String name;
     private LocalDate dayOfBirth;
     private LocalDate dayOfDeath;
-    private final Gender gender;
-    private final Map< String, String > parents;
-    private final List< Human > children;
+    private Gender gender;
+    private Map< String, String > parents;
+    private List< Human > children;
     Human partner;
 
     public Human(FamilyTree family, String lastname, String name, LocalDate birthday, Gender gender) {
@@ -26,30 +26,22 @@ public class Human {
     }
 
 
-    /**
-     * Определение значения ID
-     */
+
     public String getId() {
         return this.id + ". ";
     }
 
-    /**
-     * Определение Имени
-     */
+
     public String getName() {
         return name;
     }
 
-    /**
-     * Определение фамилии
-     */
+
     public String getLastname() {
         return lastname;
     }
 
-    /**
-     * Определение "Имя Фамилия"
-     */
+
     public String getFullName() {
         return this.getLastname() + " " + this.getName();
     }
@@ -62,14 +54,13 @@ public class Human {
         return dayOfDeath;
     }
 
-    /**
-     * Определение возраста для живых, возврата даты смерти для умерших
-     */
+
     public String getAge() {
         if (this.dayOfDeath == null) {
             return Integer.toString(Period.between(this.dayOfBirth, LocalDate.now()).getYears());
         } else {
-            return String.valueOf(this.dayOfDeath);
+//            return String.valueOf(this.dayOfDeath);
+            return Integer.toString(Period.between(this.dayOfBirth,this.dayOfDeath).getYears());
         }
     }
 
@@ -77,9 +68,7 @@ public class Human {
         return gender;
     }
 
-    /**
-     * Получение списка родителей
-     */
+
     public String getParents() {
         StringBuilder sb = new StringBuilder("Parents: ");
         if (this.parents.isEmpty()){
@@ -91,9 +80,7 @@ public class Human {
         return sb.toString();
     }
 
-    /**
-     * Получение списка детей
-     */
+
     public String getChildren() {
         if(this.children.isEmpty()){
             return "no children";
@@ -101,9 +88,7 @@ public class Human {
         return "Children: " + this.children;
     }
 
-    /**
-     * Получение Имени и Фамилии супруга
-     */
+
     public String getPartner() {
         if(this.partner == null){
             return "Not married";
@@ -111,38 +96,28 @@ public class Human {
         return "Spouse: " + this.partner;
     }
 
-    /**
-     * Добавление ID
-     */
+
     public void setId(int id) {
         this.id = id;
     }
 
-    /**
-     * Установка супружества: супруг1.partner(супруг2)
-     */
+
     public void setPartner(Human partner) {
         this.partner = partner;
         partner.partner = this;
     }
 
-    /**
-     * Добавление дня рождения
-     */
+
     public void setDayOfBirth(LocalDate dayOfBirth) {
         this.dayOfBirth = dayOfBirth;
     }
 
-    /**
-     * Добавление дня смерти
-     */
+
     public void setDayOfDeath(LocalDate dayOfDeath) {
         this.dayOfDeath = dayOfDeath;
     }
 
-    /**
-     * присвоение родителя человеку
-     */
+
     private void setParent(Human human) {
         if (human.getGender() == Gender.Male) {
             this.parents.put("Father " , " " + human.getFullName());
@@ -150,9 +125,7 @@ public class Human {
         else this.parents.put("Mother " , " " + human.getFullName());
     }
 
-    /**
-     * объединение ребенка с человеком
-     */
+
     public void setChild(Human human) {
         if(!children.contains(human)) {
             this.children.add(human);
@@ -160,11 +133,13 @@ public class Human {
         }
     }
 
-    /**
-     * Переопределенние toString
-     */
+
+//    @Override
+//    public String toString() {return (lastname + " " + name); }
+
+
     @Override
     public String toString() {
-        return (lastname + " " + name);
+        return getId()+getFullName()+" "+getDayOfBirth()+", "+getAge()+" years";
     }
 }
