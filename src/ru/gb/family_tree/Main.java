@@ -43,7 +43,8 @@ public class Main {
         human5.setDayOfDeath(LocalDate.of(2011, 1, 11));
         human7.setDayOfDeath(LocalDate.of(2007, 7, 17));
         human8.setDayOfDeath(LocalDate.of(2010, 10, 10));
-
+//        MyTree.sortByAge();
+//        MyTree.sortByGender();
         /**
          * Вывод всех членов семьи
          */
