@@ -2,9 +2,10 @@ package ru.gb.family_tree.family_tree;
 
 import ru.gb.family_tree.human.Gender;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 
-public interface TreeItem<E> extends Comparable<E> {
+public interface TreeItem<E> extends Comparable<E>, Serializable {
     String getAge();
     String getId();
 
@@ -14,10 +15,9 @@ public interface TreeItem<E> extends Comparable<E> {
     LocalDate getDayOfBirth();
     LocalDate getDayOfDeath();
     String getParents();
-    void setParent(E e);
+    void setParent(E human);
 
-    String toString();
-    void setPartner(E e);
+    void setPartner(E human);
     Gender getGender();
     String getChildren();
     String getPartner();
