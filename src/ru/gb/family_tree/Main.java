@@ -1,6 +1,7 @@
 package ru.gb.family_tree;
 
 import ru.gb.family_tree.family_tree.FamilyTree;
+import ru.gb.family_tree.family_tree.TreeItem;
 import ru.gb.family_tree.human.Human;
 import ru.gb.family_tree.human.Gender;
 import ru.gb.family_tree.writer.FileHandler;

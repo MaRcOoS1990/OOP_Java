@@ -2,20 +2,19 @@ package ru.gb.family_tree.family_tree;
 
 import ru.gb.family_tree.comporators.HumanComparatorByAge;
 import ru.gb.family_tree.comporators.HumanComparatorByGender;
-import ru.gb.family_tree.human.Human;
 
 import java.io.Serializable;
 import java.util.*;
 
-public class FamilyTree implements Serializable,Iterable<Human> {
-    private  List<Human> FamilyList;
+public class FamilyTree<E extends TreeItem<E>> implements Serializable,Iterable<E> {
+    private  List<E> FamilyList;
     private int id = 1;
     public FamilyTree() {
         FamilyList = new ArrayList<>();
     }
 
 
-    public void addHuman(Human human) {
+    public void addHuman(E human) {
         human.setId(id++);
         if (!FamilyList.contains(human)) FamilyList.add(human);
     }
@@ -24,7 +23,7 @@ public class FamilyTree implements Serializable,Iterable<Human> {
     public String allTree() {
         StringBuilder sb = new StringBuilder();
         sb.append("All family members :\n").append("- - ".repeat(30)).append("\n");
-        for (Human member: FamilyList) {
+        for (E member: FamilyList) {
             sb.append(member.getId());
             sb.append(member.getFullName());
             sb.append("; ");
@@ -57,7 +56,7 @@ public class FamilyTree implements Serializable,Iterable<Human> {
     public String searchByNameSurname(String name){
         StringBuilder sb = new StringBuilder();
         sb.append("Search results: \n");
-        for (Human member: FamilyList) {
+        for (E member: FamilyList) {
             if(member.getName().contains(name)|| member.getLastname().contains(name)){
                 sb.append(member.getId());
                 sb.append(member.getFullName());
@@ -72,12 +71,12 @@ public class FamilyTree implements Serializable,Iterable<Human> {
         return sb.toString();
     }
     public void sortByAge() {
-        FamilyList.sort(new HumanComparatorByAge());
+        FamilyList.sort(new HumanComparatorByAge<>());
     }
     public void sortByGender(){
-        FamilyList.sort(new HumanComparatorByGender());
+        FamilyList.sort(new HumanComparatorByGender<>());
     }
-    public Iterator<Human> iterator(){
+    public Iterator<E> iterator(){
         return FamilyList.iterator();
     }
 }

@@ -1,11 +1,12 @@
 package ru.gb.family_tree.human;
 import ru.gb.family_tree.family_tree.FamilyTree;
+import ru.gb.family_tree.family_tree.TreeItem;
 
 import java.io.Serializable;
 import java.time.*;
 import java.util.*;
 
-public class Human implements Serializable {
+public class Human implements Serializable,TreeItem<Human> {
     private int id;
     private String lastname;
     private String name;
@@ -103,6 +104,7 @@ public class Human implements Serializable {
     }
 
 
+
     public void setPartner(Human partner) {
         this.partner = partner;
         partner.partner = this;
@@ -119,7 +121,7 @@ public class Human implements Serializable {
     }
 
 
-    private void setParent(Human human) {
+    public void setParent(Human human) {
         if (human.getGender() == Gender.Male) {
             this.parents.put("Father " , " " + human.getFullName());
         }
@@ -145,4 +147,12 @@ public class Human implements Serializable {
     }
 
 
+    @Override
+    public void addHuman() {
+
+    }
+    @Override
+    public int compareTo(Human o) {
+        return 0;
+    }
 }
