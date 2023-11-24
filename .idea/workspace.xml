@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d647a9d-4550-4e6e-a4f6-ee293a643306" name="Changes" comment="" />
+    <list default="true" id="6d647a9d-4550-4e6e-a4f6-ee293a643306" name="Changes" comment="correct mistakes">
+      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Builder/HumanBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/human/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/human/Human.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/human/comparators/ComparatorByAge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/human/comparators/ComparatorById.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/human/comparators/ComparatorByLastname.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/human/comparators/ComparatorByName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/service/Service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/tree/FamilyTree.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/tree/FamilyTreeItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/tree/HumanIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/writer/FileHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/writer/Writable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/writer/read.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/writer/text.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/writer/tree.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/presenter/Presenter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/ConsoleUI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/AddHuman.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/Command.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/FindByName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/Finish.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/GetInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/Load.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/Save.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/SetChild.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/SetParent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/SortByAge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/SortById.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/SortByName.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/commands/SortBySurname.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -13,6 +49,9 @@
         <option value="Interface" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -63,10 +102,35 @@
       <workItem from="1700816133422" duration="43000" />
       <workItem from="1700816187731" duration="151000" />
       <workItem from="1700816351578" duration="651000" />
+      <workItem from="1700817040016" duration="152000" />
+      <workItem from="1700817199341" duration="10000" />
     </task>
+    <task id="LOCAL-00001" summary="correct mistakes">
+      <created>1700817073658</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1700817073658</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="correct mistakes" />
+    <option name="LAST_COMMIT_MESSAGE" value="correct mistakes" />
   </component>
 </project>
