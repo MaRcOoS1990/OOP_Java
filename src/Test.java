@@ -60,10 +60,10 @@ public class Test {
 //        human8.setChild(human4);
 //        human11.setChild(human6);
 //
-//        human4.setDayOfDeath(LocalDate.of(2019, 9, 24));
-//        human5.setDayOfDeath(LocalDate.of(2011, 2, 10));
-//        human7.setDayOfDeath(LocalDate.of(2005, 12, 25));
-//        human8.setDayOfDeath(LocalDate.of(2012, 5, 7));
+//        human4.setDayOfDeath(LocalDate.of(2017, 9, 4));
+//        human5.setDayOfDeath(LocalDate.of(2010, 12, 11));
+//        human7.setDayOfDeath(LocalDate.of(2007, 2, 2));
+//        human8.setDayOfDeath(LocalDate.of(2010, 6, 16));
 //
 //
 //
