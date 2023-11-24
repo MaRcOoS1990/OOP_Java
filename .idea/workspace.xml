@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02c3710a-3b86-4809-b5ed-7b03e6ac5931" name="Changes" comment="HW 4">
-      <change beforePath="$PROJECT_DIR$/src/ru/gb/family_tree/family_tree/TreeItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ru/gb/family_tree/family_tree/TreeItem.java" afterDir="false" />
-    </list>
+    <list default="true" id="6d647a9d-4550-4e6e-a4f6-ee293a643306" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,24 +10,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
       </list>
     </option>
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
-  <component name="ProjectId" id="2XAOhG0o37E6WR1ycocie2GyPrR" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2Yc7E94x7tRfDhsWspeAvND2ujV" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -39,154 +27,46 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;D:/Studies/IntellijWork/OOP_Java&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;File.Encoding&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.ru.gb.family_tree.Main">
-    <configuration name="ru.gb.family_tree.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk-21" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="MAIN_CLASS_NAME" value="ru.gb.family_tree.Main" />
-      <module name="OOP_Java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ru.gb.family_tree.family_tree.FamilyTree" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ru.gb.vending_machin.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ru.gb.vending_machin.Main" />
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="model.human.comparators" />
+      <recent name="model.tree" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Test" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
       <module name="OOP_Java" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.ru.gb.family_tree.Main" />
-        <item itemvalue="Application.ru.gb.vending_machin.Main" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="02c3710a-3b86-4809-b5ed-7b03e6ac5931" name="Changes" comment="" />
-      <created>1698068536094</created>
+      <changelist id="6d647a9d-4550-4e6e-a4f6-ee293a643306" name="Changes" comment="" />
+      <created>1700812900330</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1698068536094</updated>
-      <workItem from="1698068538329" duration="7743000" />
-      <workItem from="1698082253246" duration="3000" />
-      <workItem from="1698142588016" duration="10000" />
-      <workItem from="1698142693155" duration="22000" />
-      <workItem from="1698473262409" duration="2039000" />
-      <workItem from="1698654097763" duration="30000" />
-      <workItem from="1698654197295" duration="439000" />
-      <workItem from="1698654684555" duration="800000" />
-      <workItem from="1698662459471" duration="119000" />
-      <workItem from="1698682111049" duration="9000" />
-      <workItem from="1698685401443" duration="708000" />
-      <workItem from="1698738735252" duration="336000" />
-      <workItem from="1698739151648" duration="2605000" />
-      <workItem from="1698741788649" duration="722000" />
-      <workItem from="1698749751494" duration="347000" />
-      <workItem from="1698762142105" duration="1001000" />
-      <workItem from="1698764295697" duration="9000" />
-      <workItem from="1698999349526" duration="1263000" />
-      <workItem from="1699086982538" duration="2623000" />
-      <workItem from="1699091702659" duration="774000" />
-      <workItem from="1699429620918" duration="16000" />
-      <workItem from="1699430043501" duration="483000" />
-      <workItem from="1699431370676" duration="826000" />
-      <workItem from="1699432257416" duration="134000" />
-      <workItem from="1699432419534" duration="1716000" />
-      <workItem from="1699434959219" duration="4000" />
-      <workItem from="1699735605291" duration="235000" />
-      <workItem from="1700214094026" duration="5000" />
-      <workItem from="1700218552200" duration="715000" />
-      <workItem from="1700467707277" duration="7151000" />
+      <updated>1700812900330</updated>
+      <workItem from="1700812901742" duration="171000" />
+      <workItem from="1700813811389" duration="312000" />
+      <workItem from="1700814160533" duration="1779000" />
+      <workItem from="1700815990098" duration="23000" />
+      <workItem from="1700816016771" duration="22000" />
+      <workItem from="1700816048555" duration="50000" />
+      <workItem from="1700816133422" duration="43000" />
+      <workItem from="1700816187731" duration="151000" />
+      <workItem from="1700816351578" duration="651000" />
     </task>
-    <task id="LOCAL-00001" summary="final build">
-      <created>1698474299480</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1698474299480</updated>
-    </task>
-    <task id="LOCAL-00002" summary="changes">
-      <created>1698475182120</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1698475182120</updated>
-    </task>
-    <task id="LOCAL-00003" summary="changes">
-      <created>1698654406843</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1698654406843</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Add Serializable&#10;Correct my mistakes">
-      <created>1699089756998</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1699089756998</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Add Serializable&#10;Correct my mistakes">
-      <created>1699091879981</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1699091879981</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Add sort and iterable">
-      <created>1699434466546</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1699434466546</updated>
-    </task>
-    <task id="LOCAL-00007" summary="HW 4">
-      <created>1700474596497</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1700474596497</updated>
-    </task>
-    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="final build" />
-    <MESSAGE value="changes" />
-    <MESSAGE value="Add Serializable&#10;Correct my mistakes" />
-    <MESSAGE value="Add sort and iterable" />
-    <MESSAGE value="HW 4" />
-    <option name="LAST_COMMIT_MESSAGE" value="HW 4" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
