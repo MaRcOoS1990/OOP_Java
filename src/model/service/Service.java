@@ -3,105 +3,103 @@ package model.service;
 import model.human.Gender;
 import model.human.Human;
 import model.tree.FamilyTree;
-import model.writer.FileHandler;
+import model.writer.Writable;
 
 import java.time.LocalDate;
 import java.util.List;
 
 public class Service {
-    private FamilyTree<Human> familyTree;
-    private FileHandler fileHandler;
+    private FamilyTree<Human> familyList;
+
+    private Writable writable;
 
 
-    public Service() {
-        familyTree = new FamilyTree<>();
-        fileHandler = new FileHandler();
-//        Human human1 = new Human(1, "Shopalev", "Sergey", LocalDate.of(1988, 4, 7), Gender.Male);
-//        Human human2 = new Human(2, "Selivanova", "Olga", LocalDate.of(1987, 3, 11), Gender.Female);
-//        Human human3 = new Human(3, "Shopalev", "Yurii", LocalDate.of(1940, 6, 15), Gender.Male);
-//        Human human4 = new Human(4, "Detkova", "Luba", LocalDate.of(1946, 3, 22), Gender.Female);
-//        Human human5 = new Human(5, "Selivanov", "Igor", LocalDate.of(1958, 2, 13), Gender.Male);
-//        Human human6 = new Human(6, "Selivanova", "Natalia", LocalDate.of(1980, 6, 18), Gender.Female);
-//        Human human7 = new Human(7, "Detkov", "Fedor", LocalDate.of(1926, 1, 19), Gender.Male);
-//        Human human8 = new Human(8, "Ilevarova", "Anastasiya", LocalDate.of(1924, 2, 13), Gender.Female);
-//        Human human9 = new Human(9, "Detkova", "Elvira", LocalDate.of(1957, 8, 21), Gender.Female);
-//        Human human10 = new Human(10, "Shopaleva", "Ekaterina", LocalDate.of(2012, 4, 2), Gender.Female);
-//        Human human11 = new Human(11, "Kuprinova", "Ludmila", LocalDate.of(1941, 1, 15), Gender.Female);
+
+    public Service(Writable writable) {
+        this.writable = writable;
+        familyList = new FamilyTree<>();
+        builder = new HumanBuilder();
+//        Human human1 = builder.build(1, "Shopalev", "Sergey", LocalDate.of(1988, 4, 7), Gender.Male);
+//        Human human2 = builder.build(2, "Selivanova", "Olga", LocalDate.of(1987, 3, 11), Gender.Female);
+//        Human human3 = builder.build(3, "Shopalev", "Yurii", LocalDate.of(1940, 6, 15), Gender.Male);
+//        Human human4 = builder.build(4, "Detkova", "Luba", LocalDate.of(1946, 3, 22), Gender.Female);
+//        Human human5 = builder.build(5, "Selivanov", "Igor", LocalDate.of(1958, 2, 13), Gender.Male);
+//        Human human6 = builder.build(6, "Selivanova", "Natalia", LocalDate.of(1980, 6, 18), Gender.Female);
+//        Human human7 = builder.build(7, "Detkov", "Fedor", LocalDate.of(1926, 1, 19), Gender.Male);
+//        Human human8 = builder.build(8, "Ilevarova", "Anastasiya", LocalDate.of(1924, 2, 13), Gender.Female);
+//        Human human9 = builder.build(9, "Detkova", "Elvira", LocalDate.of(1957, 8, 21), Gender.Female);
+//        Human human10 = builder.build(10, "Shopaleva", "Ekaterina", LocalDate.of(2012, 4, 2), Gender.Female);
+//        Human human11 = builder.build(11, "Kuprinova", "Ludmila", LocalDate.of(1941, 1, 15), Gender.Female);
 //
-
-//        familyTree.addHuman(human1);
-//        familyTree.addHuman(human2);
-//        familyTree.addHuman(human3);
-//        familyTree.addHuman(human4);
-//        familyTree.addHuman(human5);
-//        familyTree.addHuman(human6);
-//        familyTree.addHuman(human7);
-//        familyTree.addHuman(human8);
-//        familyTree.addHuman(human9);
-//        familyTree.addHuman(human10);
-//        familyTree.addHuman(human11);
+//        familyList.addHuman(human1);
+//        familyList.addHuman(human2);
+//        familyList.addHuman(human3);
+//        familyList.addHuman(human4);
+//        familyList.addHuman(human5);
+//        familyList.addHuman(human6);
+//        familyList.addHuman(human7);
+//        familyList.addHuman(human8);
+//        familyList.addHuman(human9);
+//        familyList.addHuman(human10);
+//        familyList.addHuman(human11);
 
     }
 
-    public void addHuman(String info){
-        List list = List.of(info.split(", "));
-        int id = Integer.parseInt(list.get(0).toString());
-        String lastname = list.get(1).toString();
-        String name = list.get(2).toString();
-        List< String > dateBirth = List.of(list.get(3).toString().split("-"));
-        List< String > dateDeath = List.of(list.get(4).toString().split("-"));
-        LocalDate birth = setDate(dateBirth, 0,1,2);
-        LocalDate death = setDate(dateDeath, 0,1,2);
-        Gender gender = setGender(list);
-        Human human = new Human(id, lastname, name, birth, death, gender);
-        familyTree.addHuman(human);
+    public void addHuman(List info){
+        String lastname = info.get(0).toString();
+        String name = info.get(1).toString();
+        LocalDate birth = (LocalDate) info.get(2);
+        LocalDate death = (LocalDate) info.get(3);
+        Gender gender = getInfoGender(info);
+        Human human = builder.build(lastname, name, birth, death, gender);
+        familyList.addHuman(human);
     }
 
     public String getHumanListInfo(){
-        return familyTree.allTree();
+        return familyList.allTree();
     }
 
     public FamilyTree< Human > getFamilyTree() {
-        return familyTree;
+        return familyList;
     }
 
     public void read(){
-        familyTree = load();
-        System.out.println(familyTree.allTree());
+        familyList = load();
+        System.out.println(familyList.allTree());
     }
 
-    public FamilyTree<Human> load() {
-        fileHandler = new FileHandler();
+    private FamilyTree<Human> load() {
         String filePath = "src/model/writer/tree.txt";
         System.out.println("Upload file: ");
-        return (FamilyTree<Human>) fileHandler.read(filePath);
+        return (FamilyTree<Human>) writable.read(filePath);
     }
 
     public void save(){
-        fileHandler = new FileHandler();
         String filePath = "src/model/writer/tree.txt";
-        boolean saved = fileHandler.save(familyTree, filePath);
+        boolean saved = writable.save(familyList, filePath);
         System.out.println("Save file: " + saved);
     }
 
     public void sortByName(){
-        familyTree.sortByName();
+        familyList.sortByName();
     }
     public void sortByLastname(){
-        familyTree.sortByLastname();
+        familyList.sortByLastname();
     }
     public void sortByAge(){
-        familyTree.sortByAge();
+        familyList.sortByAge();
     }
     public void sortById(){
-        familyTree.sortById();
+        familyList.sortById();
     }
 
     public String searchByNameSurname(String name){
-        return familyTree.SearchByNameSurname(name);
+        return familyList.SearchByNameSurname(name);
     }
 
-    public void setChild(Human parent, Human child){
+    public void setChild(int idParent, int idChild){
+        Human parent = searchById(idParent);
+        Human child = searchById(idChild);
         parent.setChild(child);
     }
 
@@ -110,12 +108,9 @@ public class Service {
         return getHumanListInfo();
     }
 
-    public void getId(Human human) {
-
-    }
 
     public Human searchById(int idHuman) {
-        return familyTree.searchById(idHuman);
+        return familyList.searchById(idHuman);
     }
     private LocalDate setDate(List date, int indexY, int indexM, int indexD){
         int year = Integer.parseInt(date.get(0).toString());
@@ -124,7 +119,7 @@ public class Service {
         LocalDate dateOut = LocalDate.of(year, month, day);
         return dateOut;
     }
-    private Gender setGender(List list){
+    private Gender getInfoGender(List list){
         Gender gender;
         if(list.get(5).toString().contains("Male"))
             gender = Gender.Male;

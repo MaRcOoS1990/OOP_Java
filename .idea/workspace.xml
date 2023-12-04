@@ -2,41 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d647a9d-4550-4e6e-a4f6-ee293a643306" name="Changes" comment="correct mistakes">
-      <change afterPath="$PROJECT_DIR$/src/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/Builder/HumanBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/human/Gender.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/human/Human.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/human/comparators/ComparatorByAge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/human/comparators/ComparatorById.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/human/comparators/ComparatorByLastname.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/human/comparators/ComparatorByName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/service/Service.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/tree/FamilyTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/tree/FamilyTreeItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/tree/HumanIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/writer/FileHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/writer/Writable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/writer/read.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/writer/text.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/model/writer/tree.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/presenter/Presenter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/ConsoleUI.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/MainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/AddHuman.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/Command.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/FindByName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/Finish.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/GetInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/Load.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/Save.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/SetChild.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/SetParent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/SortByAge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/SortById.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/SortByName.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/view/commands/SortBySurname.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/Builder/HumanBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Builder/HumanBuilder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/human/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/human/Human.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/service/Service.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/service/Service.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/tree/FamilyTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/tree/FamilyTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/presenter/Presenter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/presenter/Presenter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/ConsoleUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/ConsoleUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/View.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/View.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +24,14 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_TAGS">
+      <GitPushTagMode>
+        <option name="argument" value="--tags" />
+        <option name="title" value="All" />
+      </GitPushTagMode>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -104,6 +84,8 @@
       <workItem from="1700816351578" duration="651000" />
       <workItem from="1700817040016" duration="152000" />
       <workItem from="1700817199341" duration="10000" />
+      <workItem from="1700817227373" duration="949000" />
+      <workItem from="1701684714992" duration="2659000" />
     </task>
     <task id="LOCAL-00001" summary="correct mistakes">
       <created>1700817073658</created>
@@ -112,7 +94,14 @@
       <option name="project" value="LOCAL" />
       <updated>1700817073658</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="correct mistakes">
+      <created>1700817352127</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1700817352127</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

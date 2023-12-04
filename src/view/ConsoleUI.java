@@ -72,11 +72,6 @@ public class ConsoleUI implements View{
     }
 
     @Override
-    public void setParent() {
-
-    }
-
-    @Override
     public void getFamilyList() {
         presenter.getHumanListInfo();
     }

@@ -21,8 +21,7 @@ public class FamilyTree<T extends FamilyTreeItem<T> > implements Serializable, I
 
 
     public void addHuman(T human) {
-        human.setId(id++);
-        if (!familyList.contains(human)) familyList.add(human);
+        familyList.add(human);
 
     }
 

@@ -3,6 +3,8 @@ import model.human.Gender;
 import model.human.Human;
 import view.View;
 import model.service.Service;
+import model.writer.Writable;
+import model.writer.FileHandler;
 
 import java.time.LocalDate;
 import java.util.List;
@@ -15,22 +17,11 @@ public class Presenter {
 
     public Presenter(View view) {
         this.view = view;
-        service = new Service();
+        Writable writable = new FileHandler<Human>();
+        service = new Service(writable);
     }
-    public void addHuman(String info){
-//        System.out.println(info);
-        String list = info;
-//        System.out.println(list);
-//        int id = Integer.parseInt(list.get(0).toString());
-//        String lastname = (String) list.get(1);
-//        String name = (String) list.get(2);
-//        List dateBirth = List.of(list.get(3).toString().split("-"));
-//        List dateDeath = List.of(list.get(4).toString().split("-"));
-//        LocalDate birth = service.setDate(dateBirth, 0,1,2);
-//        LocalDate death = service.setDate(dateDeath, 0,1,2);
-//        Gender gender = service.setGender(list);
-//        Human human = new Human(id, lastname, name, birth, death, gender);
-        service.addHuman(list);
+    public void addHuman(List info){
+        service.addHuman(info);
     }
 
     public void getHumanListInfo(){
@@ -44,8 +35,6 @@ public class Presenter {
     }
     public void save(){
         service.save();
-
-
     }
 
     public void sortByAge(){
@@ -70,10 +59,7 @@ public class Presenter {
     }
 
     public void setChild(int idParent,int  idChild){
-        Human parent = service.searchById(idParent);
-        Human child = service.searchById(idChild);
-        service.setChild(parent, child);
-
+        service.setChild(idParent, idChild);
     }
 
     public void getId(Human human){

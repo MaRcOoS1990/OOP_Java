@@ -56,38 +56,21 @@ public class Human implements FamilyTreeItem< Human > {
 
     //геттеры:
 
-    /**
-     * Получение значения ID
-     *
-     * @return Строка вида 'ID.'
-     */
     public String getId() {
         return this.id + ". ";
     }
 
-    /**
-     * Получение Имени
-     *
-     * @return Строка Имя
-     */
+
     public String getName() {
         return name;
     }
 
-    /**
-     * Получение фамилии
-     *
-     * @return Строка Фамилия
-     */
+
     public String getLastname() {
         return lastname;
     }
 
-    /**
-     * Получение "Имя Фамилия" из отдельных методов
-     *
-     * @return Строка "Имя Фамилия"
-     */
+
     public String getFullName() {
         return this.getLastname() + " " + this.getName();
     }
@@ -100,11 +83,7 @@ public class Human implements FamilyTreeItem< Human > {
         return dayOfDeath;
     }
 
-    /**
-     * вычисление возраста для живущих, возврат даты смерти для умерших
-     *
-     * @return число в строку - возраст или строка даты смерти
-     */
+
     public int getAge() {
             return Period.between(this.dayOfBirth, LocalDate.now()).getYears();
     }
@@ -113,105 +92,65 @@ public class Human implements FamilyTreeItem< Human > {
         return gender;
     }
 
-    /**
-     * Получение списка родителей в формате Мать=ААА, Отец=ВВВ
-     *
-     * @return Стринг билдер в строку
-     */
+
     public String getParents() {
-        StringBuilder sb = new StringBuilder("Родители: ");
+        StringBuilder sb = new StringBuilder("Parents: ");
         if (this.parents.isEmpty()) {
-            sb.append("Данных нет");
+            sb.append("Not found");
         } else {
             sb.append(this.parents);
         }
         return sb.toString().replace("=", ": ");
     }
 
-    /**
-     * Получение списка детей в формате перечисления
-     *
-     * @return Строка Дети: ААА, БББ, ВВВ
-     */
+
     public String getChildren() {
         if (this.children.isEmpty()) {
-            return "Детей нет";
+            return "Not found children";
         }
-        return "Дети: " + this.children;
+        return "Children: " + this.children;
     }
 
-    /**
-     * Получение Имени и Фамилии супруга
-     *
-     * @return Строка "Супруг: Фамилия Имя"
-     */
+
     public String getSpouse() {
         if (this.spouse == null) {
-            return "Не женат/замужем";
+            return "Not married";
         }
-        return "Супруг: " + this.spouse;
+        return "Spouse: " + this.spouse;
     }
 
     // Сетеры:
 
-    /**
-     * Установка ID
-     *
-     * @param id
-     */
     public void setId(int id) {
         this.id = id;
     }
 
-    /**
-     * Установка супружества: супруг1.spouse(супруг2)
-     *
-     * @param partner
-     */
+
     public void setParner(Human partner) {
         this.spouse = partner;
         partner.spouse = this;
     }
 
-    /**
-     * Установка дня рождения
-     *
-     * @param dayOfBirth
-     */
+
     public void setDayOfBirth(LocalDate dayOfBirth) {
         this.dayOfBirth = dayOfBirth;
     }
 
-    /**
-     * Установка дня смерти
-     *
-     * @param dayOfDeath
-     */
+
     public void setDayOfDeath(LocalDate dayOfDeath) {
         this.dayOfDeath = dayOfDeath;
     }
 
-    /**
-     * присвоение родителя человеку
-     *
-     * @param human
-     */
+
 
     public void setParent(Human human) {
         if (human.getGender() == Gender.Male) {
-//            this.parents.put("Отец " , " " + Model.human.getFullName());
-//            this.parents.put("Отец",  Model.human);
-            this.parents.put("Отец",  human);
+            this.parents.put("Father",  human);
         }
-//        else this.parents.put("Мать " , " " + Model.human.getFullName());
-        else this.parents.put("Мать ", human);
+        else this.parents.put("Mother ", human);
     }
 
-    /**
-     * присвоение ребенка человеку
-     *
-     * @param human
-     */
+
     public void setChild(Human child) {
         if (!children.contains(child)) {
             this.children.add(child);
@@ -219,11 +158,7 @@ public class Human implements FamilyTreeItem< Human > {
         }
     }
 
-    /**
-     * Переопределенный toString
-     *
-     * @return
-     */
+
     @Override
     public String toString() {
         return (lastname + " " + name + " " + dayOfBirth + " " + gender);

@@ -16,5 +16,4 @@ public interface View {
     void findByName();
     void finish();
 
-    void setParent();
 }
